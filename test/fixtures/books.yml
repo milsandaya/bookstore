@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  isbn: MyString
+  title: MyString
+  publisher: MyString
+  author: MyString
+  genre: MyString
+  summary: MyText
+  pubDate: 2021-11-30
+  price: 9.99
+
+two:
+  isbn: MyString
+  title: MyString
+  publisher: MyString
+  author: MyString
+  genre: MyString
+  summary: MyText
+  pubDate: 2021-11-30
+  price: 9.99
