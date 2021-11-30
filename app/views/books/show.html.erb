@@ -8,3 +8,22 @@
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></li>
 </ul>
+
+<h2>Reviews</h2>
+<% render @book.reviews %>%
+
+
+<h2>Add a review:</h2>
+<%= form_with model: [ @book, @book.reviews.build ] do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
