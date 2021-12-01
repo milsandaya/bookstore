@@ -1,3 +1,7 @@
+<% name = current_user.present? ? current_user.email : 'Stranger' %>
+<%= render "navbar", book: @book %>
+<h1>Welcome, <%= name %> </h1>
+<br>
 <h1>Books</h1>
 
 We have <%= Book.public_count %> books in stock.
