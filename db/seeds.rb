@@ -9,6 +9,6 @@ Book.destroy_all
   book_ISBN = Faker::Code.isbn
   book_pubDate = Faker::Date.between(from: 90.years.ago, to: Date.today)
 
-  Book.create(title: book_title, author: book_author, publisher: book_publisher,
-              genre: book_genre, price: book_price, isbn: book_ISBN, pubDate: book_pubDate)
+  Book.create!(title: book_title, author: book_author, publisher: book_publisher,
+             genre: book_genre, price: book_price, isbn: book_ISBN, pubDate: book_pubDate)
 end

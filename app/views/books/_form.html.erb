@@ -23,10 +23,18 @@
     <% end %>
   </div>
 
-  <%# <div>
+      <div>
+    <%= form.label :genre %><br>
+    <%= form.text_field :genre %><br>
+    <% book.errors.full_messages_for(:author).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
   <%= form.label :status %>
-  <%# <%= form.select :status, ['Romance', 'Classic', 'Fantasy', 'History', 'Science Fiction'], selected: 'Classic' %>
-<%# </div> %>
+  <%= form.select :status, ['public', 'private', 'archived'], selected: 'public
+  <% </div>
 
   <div>
     <%= form.submit %>
