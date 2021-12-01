@@ -2,6 +2,10 @@
 
 <p><%= @book.author %></p>
 
+  <% if @book.image.attached? %>
+    <image src= "<%=(url_for(@book.image))%>">
+  <% end %>
+
 <p><%= link_to "Back to Book List", books_path %></p>
 <ul>
   <% if current_user && current_user.admin %>

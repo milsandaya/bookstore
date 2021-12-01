@@ -31,10 +31,13 @@
     <% end %>
   </div>
 
+  <%= form.label "Add a photo" %>
+  <%= form.file_field :image %>
+
   <div>
   <%= form.label :status %>
-  <%= form.select :status, ['public', 'private', 'archived'], selected: 'public
-  <% </div>
+  <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+  </div>
 
   <div>
     <%= form.submit %>
