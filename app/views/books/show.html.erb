@@ -2,6 +2,7 @@
 
 <p><%= @book.author %></p>
 
+<p><%= link_to "Back to Book List", books_path %></p>
 <ul>
   <li><%= link_to "Edit", edit_book_path(@book) %></li>
     <li><%= link_to "Delete", book_path(@book),
@@ -10,20 +11,8 @@
 </ul>
 
 <h2>Reviews</h2>
-<% render @book.reviews %>%
+<%= render @book.reviews %>
 
 
-<h2>Add a review:</h2>
-<%= form_with model: [ @book, @book.reviews.build ] do |form| %>
-  <p>
-    <%= form.label :name %><br>
-    <%= form.text_field :name %>
-  </p>
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
+<h2>Add a Review:</h2>
+<%= render 'reviews/form' %>

@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+  http_basic_authenticate_with name: "admin", password: "password", except: %i[index show]
+
   def index
     @books = Book.all
   end
@@ -45,6 +47,6 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.require(:book).permit(:title, :author)
+    params.require(:book).permit(:title, :author, :status)
   end
 end
