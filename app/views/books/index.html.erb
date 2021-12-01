@@ -4,8 +4,9 @@
 <br>
 <h1>Books</h1>
 
-We have <%= Book.count %> books in stock.
+We have <%= Book.count %> books in stock. <br>
 
+<br> <%= paginate @books %> <br>
 <ul>
   <% @books.each do |book| %>
     <% unless book.archived? %>

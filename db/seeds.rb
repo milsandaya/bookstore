@@ -1,6 +1,6 @@
 Book.destroy_all
 
-30.times do
+100.times do
   book_title = Faker::Book.title
   book_author = Faker::Book.author
   book_publisher = Faker::Book.publisher
