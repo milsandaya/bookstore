@@ -4,10 +4,12 @@
 
 <p><%= link_to "Back to Book List", books_path %></p>
 <ul>
+  <% if current_user && current_user.admin %>
   <li><%= link_to "Edit", edit_book_path(@book) %></li>
     <li><%= link_to "Delete", book_path(@book),
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></li>
+    <% end %>
 </ul>
 
 <h2>Reviews</h2>

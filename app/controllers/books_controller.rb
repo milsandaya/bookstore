@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   # http_basic_authenticate_with name: "admin", password: "password", except: %i[index show]
+  before_action :authenticate_user!, except: [:show, :index]
 
   def index
     @books = Book.all
@@ -15,6 +16,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
+    @book.user = current_user
     if @book.save
       redirect_to @book
     else
