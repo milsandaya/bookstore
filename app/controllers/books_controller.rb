@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
   # http_basic_authenticate_with name: "admin", password: "password", except: %i[index show]
-  before_action :set_book, only: %i[show edit update destroy]
+  # before_action :set_book, only: %i[show edit update destroy]
 
   def index
     @books = Book.all
