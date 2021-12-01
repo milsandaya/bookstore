@@ -7,6 +7,7 @@ We have <%= Book.public_count %> books in stock.
     <% unless book.archived? %>
       <li>
         <%= link_to book.title, book %>
+        <%= link_to book.price, book %>
       </li>
     <% end %>
   <% end %>
