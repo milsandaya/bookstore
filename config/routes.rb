@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   devise_for :admins
   root "books#index"
 
+  get "about", to: "about#index"
+  get "contact", to: "contact#index"
+
   devise_for :users, controllers: {
     registrations: "registrations",
   }
