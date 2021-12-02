@@ -8,6 +8,8 @@ class BooksController < ApplicationController
 
   def show
     @book = Book.find(params[:id])
+    session[:visit_count] ||= 0
+    session[:visit_count] += 1
   end
 
   def new

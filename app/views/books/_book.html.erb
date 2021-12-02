@@ -1,0 +1,13 @@
+<aside>
+   <%# <% if book.image.present? %>
+    <%# <p><%= image_tag product.imgage.varient(resize_to_limit: [285, 285]).processed </p>  %>
+    <%# <% end %>
+    <%# <%= link_to book.title, book %>
+    <%# <p>Price: <%= number_to_currency book.price_cents/ 100.0 %>
+    <%# <p> </p> %>
+    <%# 33:50 Nov 3 %>
+
+    <%= form_with url: root_path, method: :post do %>
+      <%= button_tag 'Add to Cart' %>
+    <% end %>
+</aside>

@@ -13,8 +13,25 @@ local:
 #   service: S3
 #   access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
 #   secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
-#   region: us-east-1
-#   bucket: your_own_bucket
+#   region: ca-central-1
+#   bucket: bookstore-ecommerce
+
+amazon_dev:
+  service: S3
+  access_key_id: <%= Rails.application.credentials.aws[:access_key_id] %>
+  secret_access_key: <%= Rails.application.credentials.aws[:secret_access_key] %>
+  region: <%= Rails.application.credentials.aws[:region] %>
+  bucket: <%= Rails.application.credentials.aws[:dev][:bucket] %>
+
+amazon_prod:
+  service: S3
+  access_key_id: <%= Rails.application.credentials.aws[:access_key_id] %>
+  secret_access_key: <%= Rails.application.credentials.aws[:secret_access_key] %>
+  region: <%= Rails.application.credentials.aws[:region] %>
+  bucket: <%= Rails.application.credentials.aws[:prod][:bucket] %>
+
+
+
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
@@ -22,6 +39,13 @@ local:
 #   project: bookstore
 #   credentials: <%= Rails.root.join("path/to/gcs.keyfile") %>
 #   bucket: bookstore_ecommerce
+
+
+# google:
+#   service: GCS
+#   project: ""
+#   credentials: <%= Rails.root.join("config/bookstore-333822-9e51652c8f94.json") %>
+#   bucket: ""
 
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
 # microsoft:

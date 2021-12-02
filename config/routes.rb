@@ -10,4 +10,6 @@ Rails.application.routes.draw do
     resources :reviews
   end
 
+  resources :cart, only: %i[create destroy]
+
 end

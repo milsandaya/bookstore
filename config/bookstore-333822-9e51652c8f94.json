@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bookstore-333822",
+  "private_key_id": "9e51652c8f94a22ffceeb9920dea4ef5499fbd09",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDWABnpqjW6MwAA\n3MCFP2AlGEwq+KIve5i3LDVAeBB4PbLUlFLJLWpAvdPLjVAOp7X4gRxctuwB4+X7\nNd0AikvZEqtAjiTIR8rDLloHnnCczTjCjpvtykeaRJAFRwdq4IUBf8nnYE0AiR5U\nosc3Twjl75zKdj4/f/IrPY7AtWAc/Dz8gicliiVw1iGssEYnkOHfjQXBs9tS8JkL\nNkxMebmMslj5lbUojxZeT3G1BCwscAeI3YR0mFrn4Yx5u1+QK+wQp+Qn+dXY02aF\nC7L1tXDpDqEf9dCVwGHZgFTAuErVV5Z/5BLJcZVM8rq2qS9DrDQeW+7RU6im4izk\nlcDcwdizAgMBAAECggEABh2wn+X2bSDiAiRM+EHsbIL6QkwiznqYzbtctj/4MIeK\n4dpvV0KOA9WpBOs/+3s9jyGZfujXa+Jogzpx238YVdbbwBeP441xtQxRFGCp1UFk\nOuM6f5xFWZpWB2CVTK+n/Xf6fDtbWAWTMVYJnYILvg6QC5U/iC8O679xof5NBeb+\nLbyamuZBsqRibiG+8RX8DRVEp/5m8FifQ5hrfu0f4WZvPRh1wIv5caWH73g7L3vb\nxXEVoHN0ux1LAQ5KPE+Kl5n6hwIkOsOigPgMcCP1XItZIV0+RNXkisC1Yocfh+ZI\nV5PAnjFcX1Y4sZsY4bgsv03UJ2xp3iH7TQ7UnHUPYQKBgQD2Y/bq+cmrydfllzeb\nOmkiQRVlFfCojSgZi6/noeycdBdOq64G/e6WFtVX9pxD1zXSsau6e7gZJacsdEgo\nLyTkDovdAixEEwHA5eZ5Vk/W7JyKwiHvzk6ED2HGTHTvqV1e5eMXeeXLp92Lscg+\nxlJeW9DHbQLTsUW5gsWkEdfBsQKBgQDeWL6UZZYF5iCq/yspGq3y3UvKDIX5rNS3\nO8Z7t7lsklf67H51Tpxm6KAEjvSY9he6eMTYqQtJMrYwrsFbYVTQojgqjKGGtvB/\n88+bu3+jfCTFfeVsUVT5uHQZSa+8Ev2Z5J4i0YfiJtjEbtVkSCzNxGDbgB7neR32\nlrCVtt4VowKBgQDtP0pl7gm7qcqCn34CsVbEjgjM4jhuBCWlm3TQxIEyETLUJMmY\nn/CZgvkBD0xeop6H916VXUXiqPf0/S7xyptqIXuZXttC3U5l8LlhArQ0DneZwN6u\nq2e9D5alO7+pedqXYyKs20pjNItGVPStRYfQpfY94QDE2EB8JairmCa5sQKBgQDW\n8Z2TIb1tCHIOPE0CGHuOa6YHtiGSIyUj2ZJgKVUEg1iwBw2c45jI1xtSLMyCTmzT\n5EoPVSPG6FI+L8JWT3pJkniPkZHZBGLsnsrVNuYGKk316WXvV5S5MDpz88sCGq20\nptDEwiAFXR5yjt6Vajx90tj7eRjnFiwEJNqicLyy1wKBgDYg4nzTPATpV/+ygsip\nUjw0PQNi3Bi5/OUxJmcSGX+edjT9mzd0IQ+i3sgiPLRGiWxueP603lyW9WjPp+fM\n+QL5cp5Z5aa3xKMhYF91cTPQqY2wk3D3KotIMWq8QgXAV51Urb7Z5ZDRkJ2sQx+0\nSPDgPixuPj+2eIIX3206z5Nv\n-----END PRIVATE KEY-----\n",
+  "client_email": "bookstore-ecommerce-fullstack@bookstore-333822.iam.gserviceaccount.com",
+  "client_id": "117111623607425375903",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bookstore-ecommerce-fullstack%40bookstore-333822.iam.gserviceaccount.com"
+}
