@@ -17,4 +17,9 @@ class CartController < ApplicationController
     flash[:notice] = "➖ #{book.title} removed from cart."
     redirect_to root_path
   end
+
+  def add
+    book = Book.find(params[:id])
+    quantity = Integer(params[‘quantity’])
+  end
 end

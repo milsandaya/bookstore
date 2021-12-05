@@ -29,10 +29,6 @@
 
 
 
-
-
-
-
       <% if user_signed_in? && current_user.admin %>
         <li class="navbar-brand">
           <%= link_to 'Books', root_path %>
@@ -40,17 +36,43 @@
         <li class="navbar-brand">
           <%= link_to 'Categories' %>
         </li>
+        <li class="navbar-brand">
+          <%= link_to 'About Us', about_path %>
+        </li>
+        <li class="navbar-brand">
+          <%= link_to 'Contact Us', contact_path %>
+        </li>
         <li class="nav-item">
                 <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
             </li>
+
+
       <% elsif user_signed_in? %>
+        <li class="navbar-brand">
+              <%= link_to 'Books', root_path %>
+            </li>
+            <li class="navbar-brand">
+          <%= link_to 'About Us', about_path %>
+        </li>
+        <li class="navbar-brand">
+          <%= link_to 'Contact Us', contact_path %>
+        </li>
             <li class="nav-item">
                 <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
             </li>
+
+
         <% else %>
+
             <li class="navbar-brand">
               <%= link_to 'Books', root_path %>
             </li>
+            <li class="navbar-brand">
+          <%= link_to 'About Us', about_path %>
+        </li>
+        <li class="navbar-brand">
+          <%= link_to 'Contact Us', contact_path %>
+        </li>
             <li class="nav-item">
                 <%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %>
             </li>

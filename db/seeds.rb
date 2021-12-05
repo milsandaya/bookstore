@@ -12,3 +12,8 @@ Book.destroy_all
   Book.create!(title: book_title, author: book_author, publisher: book_publisher,
              genre: book_genre, price: book_price, isbn: book_ISBN, pubDate: book_pubDate)
 end
+
+if Rails.env.development?
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+end
+

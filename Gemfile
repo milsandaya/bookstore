@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.1'
 require 'faker'
 gem 'devise'
+gem 'activeadmin'
 gem 'kaminari'
 gem 'google-cloud-storage'
 gem 'dotenv-rails'
