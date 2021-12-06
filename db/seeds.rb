@@ -13,7 +13,7 @@ Book.destroy_all
              genre: book_genre, price: book_price, isbn: book_ISBN, pubDate: book_pubDate)
 end
 
-if Rails.env.development?
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
-end
+# if Rails.env.development?
+# AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+# end
 
