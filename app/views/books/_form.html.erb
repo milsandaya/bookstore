@@ -15,10 +15,29 @@
     <% end %>
   </div>
 
+    <div>
+    <%= form.label :price %><br>
+    <%= form.text_field :price %><br>
+    <% book.errors.full_messages_for(:author).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+      <div>
+    <%= form.label :genre %><br>
+    <%= form.text_field :genre %><br>
+    <% book.errors.full_messages_for(:author).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <%= form.label "Add a photo" %>
+  <%= form.file_field :image %>
+
   <div>
-  <%= form.label :status %><br>
+  <%= form.label :status %>
   <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
-</div>
+  </div>
 
   <div>
     <%= form.submit %>

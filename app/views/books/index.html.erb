@@ -1,15 +1,23 @@
+<% name = current_user.present? ? current_user.email : 'Stranger' %>
+<%= render "navbar", book: @book %>
+
+<br>
 <h1>Books</h1>
 
-We have <%= Book.public_count %> books in stock.
+We have <%= Book.count %> books in stock. <br>
 
+<br> <%= paginate @books %> <br>
 <ul>
   <% @books.each do |book| %>
     <% unless book.archived? %>
       <li>
         <%= link_to book.title, book %>
+        <%= link_to book.price, book %>
       </li>
     <% end %>
   <% end %>
 </ul>
 
+<% if current_user && current_user.admin %>
 <%= link_to "New Book", new_book_path %>
+<% end %>
