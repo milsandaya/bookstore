@@ -1,9 +1,9 @@
 class BooksController < ApplicationController
   # http_basic_authenticate_with name: "admin", password: "password", except: %i[index show]
-  # before_action :set_book, only: %i[show edit update destroy]
+  before_action :authenticate_user!, except: %i[show index]
 
   def index
-    @books = Book.all
+    @books = Book.order("title").page(params[:page]).per(6)
   end
 
   def show
@@ -16,7 +16,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
-
+    # @book.user = current_user
     if @book.save
       redirect_to @book
     else
@@ -30,7 +30,6 @@ class BooksController < ApplicationController
 
   def update
     @book = Book.find(params[:id])
-
     if @book.update(book_params)
       redirect_to @book
     else
@@ -48,6 +47,6 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.require(:book).permit(:title, :author, :status)
+    params.require(:book).permit(:title, :author, :price, :status, :image)
   end
 end
